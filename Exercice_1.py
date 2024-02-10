@@ -1,24 +1,24 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-# Function defining the curve
+# Fonction definissant la courbe
 def f(x):
     return x**3
 
-# Plotting the curve
+# Tracer la courbe
 x = np.linspace(0, 1, 100)
 y = f(x)
 plt.plot(x, y)
 
-# Plotting the square
+# Tracer le carré
 plt.plot([0, 1], [0, 0], 'k-') # bottom side
 plt.plot([0, 0], [0, 1], 'k-') # left side
 plt.plot([1, 1], [0, 1], 'k-') # top side
 plt.plot([0, 1], [1, 1], 'k-') # right side
 
-# Setting the limits
+# Fixer les limites du graphique
 plt.xlim(0, 1)
 plt.ylim(0, 1)
 
-# Displaying the plot
+# Affichage du graphique
 plt.show()
